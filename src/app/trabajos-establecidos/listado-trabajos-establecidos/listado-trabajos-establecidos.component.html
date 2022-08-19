@@ -1,0 +1,40 @@
+<h2>Lista Trabajos establecidos</h2>
+
+<li class="nav-item">
+    <a routerLink="registrar-trabajos" routerLinkActive="active" class="nav-link">
+        Registrar nuevo trabajo establecido
+    </a>
+</li>
+
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Nombre
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Descripción del proyecto
+            </th>
+        </tr>
+    </thead>
+    <tbody >
+        <tr *ngFor="let contacto of contactos">
+            <td>{{contacto.id}}</td>
+            <td>{{contacto.nombre}}</td>
+            <td>{{contacto.email}}</td>
+            <td>{{contacto.mensaje}}</td>
+            <td>
+                <button (click) = "actualizarContacto(contacto.id)" class="btn btn-info">Actualizar</button>
+                <button (click) = "verDetalles(contacto.id)" class="btn btn-primary" style="margin-left:10px">Detalles</button>
+                <button (click) = "eliminarContacto(contacto.id)" class="btn btn-danger" style="margin-left:10px">Eliminar</button>
+            </td>
+        </tr>
+
+    </tbody>
+</table>
