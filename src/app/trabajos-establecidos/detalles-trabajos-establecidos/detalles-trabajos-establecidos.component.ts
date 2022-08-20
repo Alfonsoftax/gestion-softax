@@ -19,7 +19,7 @@ export class DetallesTrabajosEstablecidosComponent implements OnInit {
 
   ngOnInit(): void {
     this.id = this.route.snapshot.params['id'];
-    this.contacto = new Empleado();
+    this.contacto = new Contacto();
     this.contactoServicio.obtenerContactoPorId(this.id).subscribe(dato => {
       this.contacto = dato;
       swal(`Detalles del trabajo establecido ${this.contacto.nombre}`);

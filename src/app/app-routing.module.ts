@@ -1,9 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ListaEmpleadosComponent } from './lista-empleados/lista-empleados.component';
-import { RegistrarEmpleadoComponent } from './registrar-empleado/registrar-empleado.component';
-import { ActualizarEmpleadoComponent } from './actualizar-empleado/actualizar-empleado.component';
-import { EmpleadoDetallesComponent } from './empleado-detalles/empleado-detalles.component';
 import { ListadoTrabajosEstablecidosComponent } from './trabajos-establecidos/listado-trabajos-establecidos/listado-trabajos-establecidos.component';
 import { ActualizarTrabajosEstablecidosComponent } from './trabajos-establecidos/actualizar-trabajos-establecidos/actualizar-trabajos-establecidos.component';
 import { DetallesTrabajosEstablecidosComponent } from './trabajos-establecidos/detalles-trabajos-establecidos/detalles-trabajos-establecidos.component';
@@ -18,9 +14,6 @@ import { RegistrarTrabajosMedidaComponent } from './trabajos-medida/registrar-tr
 import { RegistrarColaboracionComponent } from './trabajos-colaboraciones/registrar-colaboracion/registrar-colaboracion.component';
 
 const routes: Routes = [
-{  path : 'contacto', component: RegistrarEmpleadoComponent},
-{  path : 'actualizar/:id', component: ActualizarEmpleadoComponent},
-{  path : 'detalles/:id', component: EmpleadoDetallesComponent},
 
 {  path : 'actualizar-trabajos/:id', component: ActualizarTrabajosEstablecidosComponent},
 {  path : 'listado-trabajos', component: ListadoTrabajosEstablecidosComponent},

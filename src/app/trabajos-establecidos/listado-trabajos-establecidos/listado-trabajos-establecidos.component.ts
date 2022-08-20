@@ -21,6 +21,7 @@ export class ListadoTrabajosEstablecidosComponent implements OnInit {
 
   private obtenerContacto(){
     this.contactoServicio.obtenerListaDeContactos().subscribe(dato =>{
+      
       this.contactos = dato;
     })
   }
@@ -45,7 +46,6 @@ export class ListadoTrabajosEstablecidosComponent implements OnInit {
     }).then((result) => {
       if(result.value){
         this.contactoServicio.eliminarContacto(id).subscribe(dato => {
-          console.log(dato);
           this.obtenerContacto();
           swal(
             'contacto eliminado',

@@ -3,4 +3,5 @@ export class Contacto {
     nombre:string;
     mensaje:String;
     email:string;
+    finProyecto:string;
 }

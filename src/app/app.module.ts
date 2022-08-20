@@ -5,11 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 
-import { ListaEmpleadosComponent } from './lista-empleados/lista-empleados.component';
-import { RegistrarEmpleadoComponent } from './registrar-empleado/registrar-empleado.component';
 import { FormsModule } from '@angular/forms';
-import { ActualizarEmpleadoComponent } from './actualizar-empleado/actualizar-empleado.component';
-import { EmpleadoDetallesComponent } from './empleado-detalles/empleado-detalles.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ListadoColaboracionComponent } from './trabajos-colaboraciones/listado-colaboracion/listado-colaboracion.component';
 import { DetalleColaboracionComponent } from './trabajos-colaboraciones/detalle-colaboracion/detalle-colaboracion.component';
@@ -28,10 +24,6 @@ import { RegistrarColaboracionComponent } from './trabajos-colaboraciones/regist
 @NgModule({
   declarations: [
     AppComponent,
-    ListaEmpleadosComponent,
-    RegistrarEmpleadoComponent,
-    ActualizarEmpleadoComponent,
-    EmpleadoDetallesComponent,
     ListadoColaboracionComponent,
     DetalleColaboracionComponent,
     DetallesTrabajosEstablecidosComponent,
